@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食不相瞞</title>
+    <link href="../img/homepage/favicon.png" rel="icon">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap import CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- jquery import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/30d15285c0.js" crossorigin="anonymous"></script>
+
+    <!-- common setting css: style.css -->
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/styleguide.css">
+
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="nav">
+        <div class="container">
+            <div class="row">
+                <!-- icon -->
+                <div class="col-3">
+                    <img src="../img/homepage/nav_icon.png" alt="">
+                </div>
+
+                <!-- 空 -->
+                <div class="col-4"></div>
+
+                <!-- 文字 -->
+                <div id="nav_block" class="col-5">
+                    <div class="nav_text">
+                        <a href="./homepage.html">首頁</a>
+                        <div class="nav_underline_n"></div>
+                    </div>
+
+                    <div class="nav_text">
+                        <a href="">團隊介紹</a>
+                        <div class="nav_underline_n"></div>
+                    </div>
+
+                    <div class="nav_text">
+                        <a href="#">設計規範</a>
+                        <div class="nav_underline"></div>
+                    </div>
+
+                    <div class="nav_text">
+                        <a href="./tab_bar.html">產品簡介</a>
+                        <div class="nav_underline_n"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 導覽列fixed吃空間修正 -->
+    <div id="nav_null"></div>
+
+    <!-- content -->
+    <div id="content">
+        <!-- 滿版 -->
+        <!-- <div class="banner">
+    </div> -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/styleguide/photo1.png" class="d-block w-100 photo1" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/styleguide/photo3.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- container -->
+        <div class="content">
+            <div class="container">
+                <div class="row icon_section">
+                    <div class="col-3">
+                        <h2>LOGO DESIGN</h2>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-7 ">
+                        <p>採用此款app的特殊功能“轉盤”作為logo的主要視覺呈現，並在外圍部分使用地圖的符號及意象增添美食地圖的意象。而用色方面選用app標準色＃FACA0F黃色來呈現沒時代給人滿足感與喜悅。
+                        </p>
+                        <img class="padding" src="../img/styleguide/logo.svg" alt="">
+                    </div>
+                </div>
+                <br><br>
+                <div class="row section">
+                    <div class="col-3">
+                        <h2>COLOR</h2>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-7">
+                        <p>在顏色選用上選用明度較高的色調，並選用鮮明的黃色作為此款app主要的顏色，而明度高的綠色則是考量素食族群，並搭配無彩度的灰色調做為搭配。鮮明的顏色讓使用者能感受的食物帶給人趣味以及享受。
+                        </p>
+                        <br>
+                        <img class="padding1" src="../img/styleguide/color.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="content yellow_bg">
+            <div class="container">
+                <div class="row section">
+                    <div class="col-3">
+                        <h2>FONT</h2>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col-7">
+                        <img src="../img/styleguide/font.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="icon">
+                <div class="padding">
+                    <div class="row icon_design_section">
+                        <div class="col-3">
+                            <h2>ICON DESIGN</h2>
+                        </div>
+                        <div class="col-2">
+                        </div>
+                        <div class="col-7">
+                            <img src="../img/styleguide/logogroup.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="photo">
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row icon_section">
+                <div class="col-2">
+                    <h2>TAB BAR</h2>
+                </div>
+                <div class="col-1">
+                </div>
+                <div class="col-9">
+                    <img src="../img/styleguide/tab_bar.png" alt="">
+                    <img src="../img/styleguide/tab_bar1.png" alt="">
+                </div>
+            </div>
+            <br><br>
+            <div class="row section">
+                <div class="col-2">
+                    <h2>INPUT</h2>
+                </div>
+                <div class="col-1">
+                </div>
+                <div class="col-9">
+                    <img src="../img/styleguide/input.svg" alt="">
+                </div>
+            </div>
+            <br><br>
+            <div class="">
+                <div class="row section">
+                    <div class="col-2">
+                        <h2>SEARCH</h2>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                    <div class="col-9">
+                        <img src="../img/styleguide/search.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content gray_bg">
+            <div class="container">
+                <div class="row section1">
+                    <div class="col-3">
+                        <h2>DROPDOWN</h2>
+                    </div>
+                    <div class="col-4">
+                        <img src="../img/styleguide/dropdown.svg">
+                    </div>
+                    <div class="col-2">
+                        <h2>BUTTON</h2>
+                    </div>
+                    <div class="col-3">
+                        <img src="../img/styleguide/button.svg" alt="">
+                    </div>
+                </div>
+                <div class="row section1">
+                    <div class="col-3">
+                        <h2>POP UP</h2>
+                    </div>
+                    <div class="col-4">
+                        <img src="../img/styleguide/popup.svg">
+                    </div>
+                    <div class="col-2">
+                        <h2>TOGGLE</h2>
+                    </div>
+                    <div class="col-3">
+                        <img src="../img/styleguide/toggle.svg" alt="">
+                    </div>
+                </div>
+                <div class="row section2">
+                    <div class="col-3">
+                        <h2>FLITER</h2>
+                    </div>
+                    <div class="col-9">
+                        <img src="../img/styleguide/fliter.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <!-- <img src=".../img/homepage/app_store.svg" alt="" id="app_store"> -->
+                        <!-- 黃底白字版 -->
+                        <img src="../img/homepage/app_store_white.svg" alt="" id="app_store">
+                    </div>
+
+                    <div class="col-5"></div>
+
+                    <div class="col-3 align_right">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-behance"></i>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="footer_line"></div>
+                    </div>
+                </div>
+
+                <div class="row" id="footer_text">
+                    <div class="col-2">
+                        <p>©食不相瞞</p>
+                    </div>
+                    <div class="col-4"></div>
+                    <div class="col-6 align_right">
+                        <p>使用者條款</p>
+                        <div class="footer_line_2"></div>
+                        <p>隱私權政策</p>
+                        <div class="footer_line_2"></div>
+                        <p>無障礙聲明</p>
+                        <div class="footer_line_2"></div>
+                        <p>幫助</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

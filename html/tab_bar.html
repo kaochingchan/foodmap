@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食不相瞞</title>
+    <link rel="icon" href="../img/homepage/favicon.png" type="image/x-icon">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap import CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- jquery import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/30d15285c0.js" crossorigin="anonymous"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>	
+
+    <!-- common setting css: style.css -->
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/tab_bar.css">
+
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="nav">
+        <div class="container">
+            <div class="row">
+                <!-- icon -->
+                <div class="col-3">
+                    <img src="../img/homepage/nav_icon.png" alt="">
+                </div>
+
+                <!-- 空 -->
+                <div class="col-4"></div>
+
+                <!-- 文字 -->
+                <div id="nav_block" class="col-5">
+                    <div class="nav_text">
+                        <a href="./homepage.html">首頁</a>
+                        <div class="nav_underline_n"></div>
+                    </div>
+
+                    <div class="nav_text">
+                        <a href="">團隊介紹</a>
+                        <div class="nav_underline_n"></div>
+                    </div>
+
+                    <div class="nav_text">
+                        <a href="./styleguide.html">設計規範</a>
+                        <div class="nav_underline_n"></div>
+                    </div>
+
+                    <div class="nav_text">
+                        <a href="#">產品簡介</a>
+                        <div class="nav_underline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 導覽列fixed吃空間修正 -->
+    <div id="nav_null"></div>
+
+    <!-- content -->
+    <div id="content">
+        <!-- 滿版 -->
+        <div id="fullscreen">
+            <div id="fullscreen_text">
+                <h1>Tab Bar內容簡介</h1>
+                <a href="#home">
+                    <img src="../img/tab_bar/fullscreen_arrow.svg" alt=""  id="fullscreen_arrow">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- sidebar -->
+        <!-- <div id="sidebar">
+            <div class="sidebar_section">
+                <div class="sidebar_color inline_b"></div>
+                <a href="#home">
+                    <h2 class="inline_b select">首頁</h2>
+                </a>
+            </div>
+
+            <div class="sidebar_section">
+                <div class="sidebar_color_n inline_b"></div>
+                <a href="#search">
+                    <h2 class="inline_b unselect">搜尋</h2>
+                </a>
+            </div>
+
+            <div class="sidebar_section">
+                <div class="sidebar_color_n inline_b"></div>
+                <a href="#wheel">
+                    <h2 class="inline_b unselect">轉盤</h2>
+                </a>
+            </div>
+        </div> -->
+
+
+        <!-- main_content -->
+        <div class="container">
+            <!-- home -->
+            <div class="row tab_section" id="home">
+                <div class="col-6">
+                    <img src="../img/tab_bar/home.png" alt="" class="tab_home_img">
+                </div>
+                <div class="col-6 tab_block">
+                    <div>
+                        <div class="tab_title">
+                            <img src="../img/tab_bar/home_icon.png" alt="" class="inline_b tab_icon">
+                            <h2 class="inline_b">首頁</h2>
+                        </div>
+
+                        <p>提供餐廳圖片、評論概覽，點擊即可進入餐廳主頁，即時獲取資訊
+                            總共分為三類-我的追蹤、為你推薦、全新開幕，等你發掘！</p>
+                        <img src="../img/tab_bar/home_tag.png" alt="" id="tab_home_tag">
+                    </div>
+                </div>
+            </div>
+
+            <!-- search -->
+            <div class="row tab_section" id="search">
+                <div class="col-6">
+                    <img src="../img/tab_bar/search.png" alt="" class="tab_home_img">
+                </div>
+                <div class="col-6 tab_block">
+                    <div>
+                        <div class="tab_title">
+                            <img src="../img/tab_bar/search_icon.svg" alt="" class="inline_b tab_icon">
+                            <h2 class="inline_b">搜尋</h2>
+                        </div>
+                        <p>以地圖形式彙整餐廳位置，透過搜尋欄、篩選條件，找到想要的餐廳
+                            餐廳區塊顯示評分、距離，也可直接加上自創標籤進行分類管理！</p>
+                    </div>
+                </div>
+            </div>
+            <!-- search_block -->
+            <div class="row" id="search_res">
+                <div class="col-3">
+                    <img src="../img/tab_bar/search_res_alert.png" alt="" class="tab_home_img find_res">
+                </div>
+                <div class="col-3">
+                    <img src="../img/tab_bar/search_res_1.png" alt="" class="tab_home_img res_anime">
+                </div>
+                <div class="col-3">
+                    <img src="../img/tab_bar/search_res_2.png" alt="" class="tab_home_img res_anime">
+                </div>
+                <div class="col-3">
+                    <img src="../img/tab_bar/search_res_3.png" alt="" class="tab_home_img res_anime">
+                </div>
+            </div>
+
+            <!-- wheel -->
+            <div class="row tab_section" id="wheel">
+                <div class="col-3">
+                    <img src="../img/tab_bar/wheel_1.png" alt="" class="tab_home_img">
+                </div>
+                <div class="col-3">
+                    <img src="../img/tab_bar/wheel_2.png" alt=""
+                    class="tab_home_img">
+                </div>
+                <div class="col-6 tab_block">
+                    <div>
+                        <div class="tab_title">
+                            <img src="../img/tab_bar/wheel_icon.svg" alt="" class="inline_b tab_icon">
+                            <h2 class="inline_b">轉盤</h2>
+                        </div>
+                        <p>為選擇困難所苦的人設計，直接透過轉盤抽出一間餐廳
+                            總共有三種篩選方式快來試看看！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="wheel_cat">
+                <div class="col-4 cat_block">
+                    <h3>直接開始旋轉</h3>
+                    <img class="wheel_cat_img" src="../img/tab_bar/wheel_wheel.svg" alt="">
+                </div>
+                <div class="col-4 cat_block">
+                    <h3>特殊標籤</h3>
+                    <img class="wheel_cat_img" src="../img/tab_bar/wheel_tag.png" alt="">
+                </div>
+                <div class="col-4 cat_block">
+                    <h3>自定義標籤</h3>
+                    <img class="wheel_cat_img" src="../img/tab_bar/wheel_fliter.png" alt="">
+                </div>
+            </div>
+
+
+            <!-- alert -->
+            <div class="row tab_section" id="alert">
+                <div class="col-2"></div>
+                <div class="col-3">
+                    <img src="../img/tab_bar/alert.png" alt="" class="tab_home_img">
+                </div>
+                <div class="col-5 tab_block">
+                    <div>
+                        <div class="tab_title">
+                            <img src="../img/tab_bar/alert_icon.svg" alt="" class="inline_b tab_icon">
+                            <h2 class="inline_b">通知</h2>
+                        </div>
+                        <p>提供即時通知資訊</p>
+                        <img src="../img/tab_bar/alert_bar.png" alt="" id="tab_home_tag">
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <!-- personal -->
+            <div class="row tab_section" id="personal">
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <img src="../img/tab_bar/personal.png" alt="" class="tab_home_img">
+                </div>
+                <div class="col-4 tab_block">
+                    <div>
+                        <div class="tab_title">
+                            <img src="../img/tab_bar/personal_icon.svg" alt="" class="inline_b tab_icon">
+                            <h2 class="inline_b">首頁</h2>
+                        </div>
+                        <p>個人帳號設定（帳號密碼、自介、電郵等</p>
+                        <p>管理、查看已收藏的餐廳</p>
+                        <p>檢視過往評論紀錄！</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <!-- <img src="../img/homepage/app_store.svg" alt="" id="app_store"> -->
+                    <!-- 黃底白字版 -->
+                    <img src="../img/homepage/app_store_white.svg" alt="" id="app_store">
+                </div>
+
+                <div class="col-5"></div>
+
+                <div class="col-3 align_right">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-behance"></i>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="footer_line"></div>
+                </div>
+            </div>
+
+            <div class="row" id="footer_text">
+                <div class="col-2">
+                    <p>©食不相瞞</p>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-6 align_right">
+                    <p>使用者條款</p>
+                    <div class="footer_line_2"></div>
+                    <p>隱私權政策</p>
+                    <div class="footer_line_2"></div>
+                    <p>無障礙聲明</p>
+                    <div class="footer_line_2"></div>
+                    <p>幫助</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/scrolling_trigger.js"></script>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>
