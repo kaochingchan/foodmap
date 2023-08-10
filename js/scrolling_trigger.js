@@ -1,6 +1,32 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
+
+
+gsap.from(".team_member",{
+    y:-200,
+    stagger:.5,
+    opacity:0,
+    duration:2,
+})
+
+
+//sidebar
+gsap.from("#sidebar",{
+    scrollTrigger: {
+        trigger: "#home",
+        start: "top 40%",
+        end: "bottom 40%",
+        toggleActions:"restart none none reverse"
+    },
+    opacity:0,
+    duration:.5,
+})
+
+
+
+//tab_bar
+
 gsap.from("#fullscreen_text", {
     opacity: 0,
     delay: 1.5,

@@ -6,10 +6,8 @@
 
 /*#region Container_RWD*/
 
-@media (min-width:1500px){
-    .container{
-        width: 1110px;
-    }
+.container{
+    width: 1110px;
 }
 
 /*#endregion container*/
